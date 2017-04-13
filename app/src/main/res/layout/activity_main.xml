@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context="reoger.hut.com.greendaostudent.MainActivity">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		
+	 <AutoCompleteTextView
+		 android:id="@+id/edit_comment"
+		 android:layout_width="0dp"
+		 android:hint="comment"
+		 android:layout_height="wrap_content"
+		 android:layout_weight="1"
+		 android:padding="5dp" />
+	
+	<AutoCompleteTextView
+		android:id="@+id/edit_text"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:hint="text"
+		android:layout_weight="1"
+	    android:padding="5dp"
+		/>
+	</LinearLayout>
+   
+	<Button
+		android:id="@+id/but_add_data"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="添加数据"
+	    android:padding="5dp"
+	 />
+	<ImageView
+		android:layout_width="match_parent"
+		android:layout_height="3dp"
+		android:background="#ff0"/>
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="显示数据"
+			android:id="@+id/but_show_data"/>
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/text_show_data"
+		android:layout_gravity="center"
+		android:gravity="center"
+		android:hint="这里将显示数据库中的数据"/>
+	
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/but_del_data"
+		android:text="删除"/>
+	
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="40dp"
+		android:hint="输入要删除或者要修改的id值"
+		android:id="@+id/exit_id"
+		android:inputType="number"
+		/>
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/but_modify_data"
+		android:text="修改"/>
+	
+
+</LinearLayout>
